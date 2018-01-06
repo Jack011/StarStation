@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='index-door'>
+      <view class='index-line'></view>
+      <view class="index-star">欢迎您</view>
+      <view class='index-line'></view>
+  </view>
+  <view class='index-extra'>
+      <text>欢迎来到星光小站，本站内容包含博客，学习资料，开发教程，内容涉及Android ，html ,css, javascript，javaweb等，总结包含开发中的实战经验，技术进阶，职业发展等...</text>
+  </view>
+  <button class="usermotto" bindtap='comeIn' type="primary">
+    <text class="user-motto">{{motto}}</text>
+  </button>
+</view>

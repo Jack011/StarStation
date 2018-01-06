@@ -1,0 +1,38 @@
+/* pages/art_list/art_list.wxss */
+.art-item{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-top: 1px solid #EDECE8;
+  border-bottom: 3px solid #EDECE8;
+}
+.art-img{
+   width:90px;
+   height: 80px;
+}
+.art-img{
+    width:90px;
+    height: 80px;
+}
+.art-content{
+  flex: 1;
+  height: 80px;
+  overflow: hidden;
+  margin-left: 6px;
+ 
+  line-height: 1.1rem;
+}
+.art-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.art-author{
+    font-size: 12px;
+    margin: 6px
+}
+.art-des{
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-top: 10px;
+}

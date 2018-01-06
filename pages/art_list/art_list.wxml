@@ -1,0 +1,14 @@
+<!--pages/art_list/art_list.wxml-->
+<view class="container">
+<!-- wx:for="{{artList}}" -->
+    <view wx:for="{{artList}}" class='art-item' bindtap="itemClick" id="{{item}}">
+        <image class="art-img" src='http://www.twinkleof.com/liangzai_img/1515054075974k1.png'></image>
+        <view class='art-content'>
+          <view class='art-title'><text>Java8新特性之Lambda表达式{{item}}</text></view>
+          <!-- <view class='art-author'><text>Jack  2018-01-02 15:24:52</text></view> -->
+          <view class='art-des'><text>写在前面还记得上次面试时被问到Java8新特性...</text></view>
+        </view>
+    </view>
+
+
+</view>
