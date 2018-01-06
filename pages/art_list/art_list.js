@@ -19,7 +19,7 @@ Page({
 
 
     wx.request({
-      url: 'http://www.twinkleof.com/liangzai/api/article/show_all',  
+      url: '接口地址',  
       data: {},
       method: 'GET',  
       // header: {}, // 设置请求的 header  
